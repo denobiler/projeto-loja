@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&display=swap');
+
+:root {
+    --primary-color: #030637;
+    --secondary-color: #720455;
+    --tertiary-color: #3C0753;
+    --highlight-color: #910A67;
+    --text-color: #f5ea57;
+    --hover-color: #f5eb5771;
+
+    --font-primary: 'Press Start 2P', system-ui;
+    --font-secondary: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+/*******************HEADER*******************/
+
+.menu {
+    background-color: var(--secondary-color);
+    padding: 1% 10%;
+}
+
+.menu__links {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.menu__links a {
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+}
+
+.menu__links a:hover {
+    transform: scale(1.2);
+    color: var(--hover-color);
+}
+
+/********************MAIN********************/
+
+.section__logo {
+    padding: 4%;
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.section__logo h1 {
+    padding: 50px;
+    font-family: var(--font-primary);
+    font-size: 48px;
+    border: 5px dotted var(--highlight-color);
+    border-radius: 24px;
+    transition: transform 0.3s ease;
+}
+
+.section__logo h1:hover {
+    transform: scale(1.2);
+}
+
+.section__logo strong {
+    color: var(--highlight-color);
+}
+
+.section__apresentacao {
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*---Index---*/
+
+.section__apresentacao__index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.section__apresentacao h1 {
+    font-family: var(--font-primary);
+}
+
+.section__apresentacao p {
+    font-family: var(--font-primary);
+    font-size: 16px;
+}
+
+.section__apresentacao img {
+    width: 500px;
+    transition: transform 0.3s ease;
+}
+
+.section__apresentacao img:hover {
+    transform: scale(1.2);
+}
+
+/*---Sobre---*/
+
+.section__apresentacao__sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.section__apresentacao__sobre h1 {
+    width: 60%;
+    color: var(--highlight-color);
+    font-family: var(--font-primary);
+    font-size: 2em;
+    text-align: center;
+    text-indent: 0;
+}
+
+.section__apresentacao__sobre p {
+    width: 60%;
+    font-family: var(--font-secondary);
+    font-size: 1.5em;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/*---Cursos---*/
+
+.section__apresentacao__courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.section__apresentacao__courses h1 {
+    padding: 5%;
+    color: var(--highlight-color);
+    font-family: var(--font-primary);
+    font-size: 2em;
+    text-align: center;
+    text-indent: 0;
+}
+
+.section__apresentacao__courses__album {
+    width: 80%;
+    padding: 0 0 5% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__apresentacao__courses__album img {
+    width: 320px;
+    transition: transform 0.3s ease;
+}
+
+.section__apresentacao__courses__album img:hover {
+    transform: scale(1.2);
+}
+
+.section__apresentacao__courses__album__foto {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.section__apresentacao__courses__album__foto h3{
+    font-family: var(--font-primary);
+    font-size: 0.8em;
+}
+
+/*---Contato---*/
+
+.section__apresentacao__contato {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.section__apresentacao__contato h3 {
+    padding: 1%;
+    font-family: var(--font-secondary);
+    font-size: 24px;
+    font-style: italic;
+}
+
+.section__apresentacao__contato p {
+    font-family: var(--font-secondary);
+    font-size: 18px;
+}
+
+/*******************FOOTER*******************/
+
+.rodape {
+    padding: 0.5%;
+    text-align: center;
+    background-color: var(--tertiary-color);
+    font-family: var(--font-secondary);
+    font-style: italic;
+    font-size: 14px;
+}
